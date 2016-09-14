@@ -28,18 +28,4 @@
    fill(0,100,100);   
    text("Quarter",buttonX+10,buttonY+35);
   }
-  
-  void update() {
-    overButton =  overRect(buttonX, buttonY, buttonWidth, buttonHeight);
-  }
-
-
-boolean overRect(int x, int y, int width, int height) {
-   if (mouseX >= x && mouseX <= x+width && 
-       mouseY >= y && mouseY <= y+height) {
-     return true;
-   } else {
-     return false;
-   }
- }
 }
